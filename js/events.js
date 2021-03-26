@@ -1,12 +1,12 @@
-const e = require("cors");
-const { default: helpers } = require("./helpers");
+// const e = require("cors");
+// const { default: helpers } = require("./helpers");
 import helpers from "./helpers.js";
 
 //when the create room button is clicked
 document.getElementById("create-room").addEventListener("click", (e) => {
   e.preventDefault();
-  let roomName = document.getElementById("#room-name").value;
-  let yourName = document.getElementById("#your-name").value;
+  let roomName = document.querySelector("#room-name").value;
+  let yourName = document.querySelector("#your-name").value;
 
   if (roomName && yourName) {
     //remove error message if any occured
