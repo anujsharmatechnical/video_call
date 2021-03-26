@@ -10,7 +10,7 @@ let path = require("path");
 //assests is pending for now
 
 app.use("/js", express.static(path.join(__dirname, "js")));
-
+0;
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
